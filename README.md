@@ -23,3 +23,8 @@
 
 ```bash
 gcc -o fuse_client fuse_client.c `pkg-config fuse3 libssh --cflags --libs` -D_FILE_OFFSET_BITS=64
+### 运行
+要运行该 FUSE 客户端，请执行以下命令：
+
+```bash
+./fuse_client <user> <ip> <挂载点>
